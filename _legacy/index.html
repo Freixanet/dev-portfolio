@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Freixanet | Portfolio</title>
+    <meta name="description" content="Portfolio de Marc Freixanet. Desarrollador y Diseñador creativo.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <header class="header">
+        <a href="#" class="logo">MF<span class="dot">.</span></a>
+        <nav class="navbar">
+            <a href="#home" class="nav-link">Inicio</a>
+            <a href="#work" class="nav-link">Proyectos</a>
+            <a href="#about" class="nav-link">Sobre mí</a>
+            <a href="#contact" class="nav-link">Contacto</a>
+        </nav>
+        <button class="theme-toggle" aria-label="Cambiar tema">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+        </button>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="hero-subtitle">Disponible para Remoto Inmediato • Basado en Barcelona</span>
+                <h1 class="hero-title">
+                    Frontend Developer <br>
+                    <span class="gradient-text">React, TypeScript & Next.js</span>
+                </h1>
+                <p class="hero-description">
+                    Desarrollo interfaces pixel-perfect, accesibles y orientadas a la conversión. Código limpio,
+                    mantenible y listo para escalar.
+                </p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn btn-primary">Ver Casos de Estudio</a>
+                    <a href="#" class="btn btn-outline">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="margin-right: 8px;">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Descargar CV (PDF)
+                    </a>
+                </div>
+            </div>
+            <!-- Removed abstract blob for clarity/performance as requested -->
+        </section>
+
+        <section id="work" class="section work">
+            <div class="container">
+                <h2 class="section-title">Experiencia Técnica (Casos de Estudio)</h2>
+                <div class="projects-grid">
+
+                    <!-- Project 1: Dashboard -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-type">SaaS B2B</div>
+                            <h3>Dashboard Administrativo de Inventario</h3>
+                        </div>
+                        <div class="project-body">
+                            <div class="star-section">
+                                <h4>Situación</h4>
+                                <p>El cliente necesitaba gestionar +10k productos con actualizaciones en tiempo real,
+                                    sufriendo de lentitud en su panel anterior.</p>
+                            </div>
+                            <div class="star-section">
+                                <h4>Tarea</h4>
+                                <p>Diseñar y desarrollar un panel de control performante que permitiera filtrado
+                                    complejo y edición masiva.</p>
+                            </div>
+                            <div class="star-section">
+                                <h4>Acción</h4>
+                                <p>Implementé <strong>React Query</strong> para caché y estados de carga, virtualización
+                                    de listas para el rendimiento y gráficos con <strong>Recharts</strong>.</p>
+                            </div>
+                            <div class="star-section">
+                                <h4>Resultado</h4>
+                                <p>Reducción del tiempo de carga de 5s a 0.4s. Aumento del 30% en la productividad del
+                                    equipo de operaciones.</p>
+                            </div>
+
+                            <div class="tech-decisions">
+                                <h4>Decisiones Técnicas</h4>
+                                <p>Elegí <strong>TanStack Query</strong> sobre useEffect para manejar el estado del
+                                    servidor y evitar race conditions. Usé virtualización para mantener el DOM ligero.
+                                </p>
+                            </div>
+
+                            <div class="tags">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>TanStack Query</span>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-text">Ver Demo Live →</a>
+                            <a href="#" class="btn-text">Ver Código →</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Checkout -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-type">E-commerce</div>
+                            <h3>Checkout Transaccional Multicapa</h3>
+                        </div>
+                        <div class="project-body">
+                            <div class="star-section">
+                                <h4>Situación</h4>
+                                <p>Alta tasa de abandono (65%) en el checkout debido a validaciones confusas y errores
+                                    de estado.</p>
+                            </div>
+                            <div class="star-section">
+                                <h4>Tarea</h4>
+                                <p>Crear un flujo de pago robusto, validado en tiempo real y resistente a fallos de red.
+                                </p>
+                            </div>
+                            <div class="star-section">
+                                <h4>Acción</h4>
+                                <p>Integración de <strong>Stripe Elements</strong>, gestión de estado global con
+                                    <strong>Zustand</strong> para persistencia y validación con <strong>Zod</strong>.
+                                </p>
+                            </div>
+                            <div class="star-section">
+                                <h4>Resultado</h4>
+                                <p>Disminución del abandono al 40%. Recuperación de carritos fallidos mediante
+                                    persistencia local.</p>
+                            </div>
+
+                            <div class="tech-decisions">
+                                <h4>Decisiones Técnicas</h4>
+                                <p>Zustand fue seleccionado por su simplicidad frente a Redux. Implementé validación
+                                    optimista para mejorar la percepción de velocidad.</p>
+                            </div>
+
+                            <div class="tags">
+                                <span>React</span>
+                                <span>Zustand</span>
+                                <span>Stripe API</span>
+                                <span>Zod</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-text">Ver Demo Live →</a>
+                            <a href="#" class="btn-text">Ver Código →</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Internal Tool -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-type">Herramienta Interna</div>
+                            <h3>Calculadora de Hipotecas & Amortización</h3>
+                        </div>
+                        <div class="project-body">
+                            <div class="star-section">
+                                <h4>Situación</h4>
+                                <p>Los agentes inmobiliarios usaban Excel complejos y propensos a errores para calcular
+                                    cuotas.</p>
+                            </div>
+                            <div class="star-section">
+                                <h4>Tarea</h4>
+                                <p>Desarrollar una web app accesible que realizara cálculos financieros complejos al
+                                    instante.</p>
+                            </div>
+                            <div class="star-section">
+                                <h4>Acción</h4>
+                                <p>Encapsulé la lógica financiera en hooks personalizados (custom hooks) con tests
+                                    unitarios (Vitest) para asegurar precisión.</p>
+                            </div>
+                            <div class="star-section">
+                                <h4>Resultado</h4>
+                                <p>Eliminación del 100% de errores de cálculo reportados. Adopción total por el equipo
+                                    de ventas.</p>
+                            </div>
+
+                            <div class="tech-decisions">
+                                <h4>Decisiones Técnicas</h4>
+                                <p>Separación estricta de UI y lógica de negocio para facilitar tests. Uso de Web
+                                    Workers para cálculos intensivos sin bloquear el UI.</p>
+                            </div>
+
+                            <div class="tags">
+                                <span>TypeScript</span>
+                                <span>Vitest</span>
+                                <span>Custom Hooks</span>
+                                <span>CSS Modules</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-text">Ver Demo Live →</a>
+                            <a href="#" class="btn-text">Ver Código →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section validation">
+            <div class="container">
+                <h2 class="section-title">Validación & Calidad</h2>
+                <div class="validation-grid">
+                    <div class="validation-card">
+                        <h3>Auditoría Lighthouse</h3>
+                        <div class="lighthouse-scores">
+                            <div class="score">
+                                <div class="circle green">100</div>
+                                <span>Performance</span>
+                            </div>
+                            <div class="score">
+                                <div class="circle green">100</div>
+                                <span>Accessibility</span>
+                            </div>
+                            <div class="score">
+                                <div class="circle green">100</div>
+                                <span>Best Practices</span>
+                            </div>
+                            <div class="score">
+                                <div class="circle green">100</div>
+                                <span>SEO</span>
+                            </div>
+                        </div>
+                        <p class="validation-note">Promedio en todos los proyectos desplegados.</p>
+                    </div>
+                    <div class="validation-card">
+                        <h3>Actividad en GitHub</h3>
+                        <ul class="pr-list">
+                            <li>
+                                <a href="#" class="pr-link">
+                                    <span class="pr-icon">🔀</span>
+                                    <div>
+                                        <strong>Refactor: Auth Context Performance</strong>
+                                        <span class="pr-desc">Reducción de re-renders innecesarios en el
+                                            provider.</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="pr-link">
+                                    <span class="pr-icon">🔀</span>
+                                    <div>
+                                        <strong>Feat: Virtualized Table Component</strong>
+                                        <span class="pr-desc">Implementación desde cero para manejar +10k filas.</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2 class="section-title">Sobre mí</h2>
+                        <p>
+                            Más allá del código, entiendo el software como una herramienta para resolver problemas de
+                            negocio.
+                            Mi enfoque es pragmático: el mejor código es el que aporta valor, es fácil de leer por otros
+                            humanos y escala sin dolor.
+                        </p>
+                        <div class="testimonials">
+                            <blockquote>
+                                "Marc tiene una capacidad única para desglosar problemas complejos en soluciones
+                                simples. Su código es limpio y sus PRs son un ejemplo a seguir."
+                                <cite>— Compañero de Equipo (Bootcamp/Proyecto)</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <h2 class="section-title">¿Hablamos?</h2>
+                    <p>Busco aportar valor desde el día 1. Disponible para entrevistas técnicas.</p>
+                    <a href="mailto:hola@marcfreixanet.com" class="btn btn-primary">Enviar Correo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Marc Freixanet. Hecho con <span style="color: var(--primary);">❤</span></p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

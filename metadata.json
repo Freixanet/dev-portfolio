@@ -1,0 +1,5 @@
+{
+  "name": "Dev.01 Portfolio",
+  "description": "High-performance, dark-mode developer portfolio featuring interactive 3D particles using React Three Fiber and Framer Motion animations.",
+  "requestFramePermissions": []
+}

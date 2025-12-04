@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    @keyframes text-shimmer {
+        0% {
+            background-position: 100% 0;
+        }
+
+        100% {
+            background-position: -100% 0;
+        }
+    }
+
+    .animate-text-shimmer {
+        animation: text-shimmer 3s ease-out infinite alternate;
+    }
+}
+
+body {
+    color: #fdfbf7;
+    /* Cream */
+}
